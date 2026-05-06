@@ -1,9 +1,14 @@
+import exo.Partie1;
 import factory.TripFactory;
 import models.Trip;
 
-void main() {
-    List<Trip> trips = TripFactory.generateTrips(10000000);
+import java.util.List;
 
-    // appeler les méthodes des exos ici
-    // pour tester si ça marche bien, générer une liste de 10 éléments et afficher le résultat
+void main() {
+    List<Trip> trips = TripFactory.generateTrips(10);
+    Partie1 partie1 = new Partie1();
+
+    System.out.println(partie1.longAndExpensiveTrips(trips));
+    System.out.println(partie1.badTrips(trips));
+    System.out.println(partie1.recentTrips(trips));
 }
