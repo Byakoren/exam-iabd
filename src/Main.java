@@ -1,6 +1,7 @@
 import exo.Partie1;
 import exo.Partie2;
 import exo.Partie3;
+import exo.Partie4;
 import factory.TripFactory;
 import models.Trip;
 
@@ -22,7 +23,14 @@ void main() {
     // System.out.println(partie2.avgDurationByCity(trips));
 
     // Partie 3
-    Partie3 partie3 = new Partie3();
-    System.out.println(partie3.top10ExpensiveTrips(trips));
-    System.out.println(partie3.bestTrip(trips));
+    // Partie3 partie3 = new Partie3();
+    // System.out.println(partie3.top10ExpensiveTrips(trips));
+    // System.out.println(partie3.bestTrip(trips));
+
+    // Partie 4
+    Partie4 partie4 = new Partie4();
+    System.out.println(partie4.totalRevenueSequential(trips));
+    System.out.println(partie4.totalRevenueParallel(trips));
+    System.out.println(partie4.countByCityParallel(trips));
+    System.out.println(partie4.premiumTripsParallel(trips));
 }
